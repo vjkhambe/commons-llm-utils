@@ -1,0 +1,12 @@
+pip freeze
+
+pip cache purge
+
+rm -rf build dist *.egg-info
+
+python -m build
+
+pip install build
+
+
+pip install dist/common_genai_utils-1.0.0*.whl
